@@ -16,3 +16,19 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.programs__list {
+  list-style-type: none;
+}
+
+.programs__item--slim-cat {
+  background-image: url("../../images/icons/stack.svg#slim-cat");
+  width: 200px;
+  height: 211px;
+}
+
+.programs__item--fat-cat {
+  background-image: url("../../images/icons/stack.svg#muscle-cat");
+  width: 268px;
+  height: 200px;
+}

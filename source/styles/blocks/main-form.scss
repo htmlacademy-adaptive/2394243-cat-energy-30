@@ -29,6 +29,14 @@
   text-transform: uppercase;
 }
 
+.main-form__input--email-icon {
+  background-image: url("../../images/icons/stack.svg#email-icon");
+}
+
+.main-form__input--tel-icon {
+  background-image: url("../../images/icons/stack.svg#telephone-icon");
+}
+
 .main-form__title {
   text-transform: none;
   color: $title-font-color;
