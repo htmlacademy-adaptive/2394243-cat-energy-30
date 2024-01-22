@@ -1,0 +1,27 @@
+.additional-products__main-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.additional-products__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $title-font-color;
+  text-transform: uppercase;
+}
+
+.additional-products__description {
+  line-height: 14px;
+}
+
+.additional-products__present-description {
+  font-size: 16px;
+  line-height: 20px;
+  color: $additional-font-color;
+  background-color: #046d15;
+}

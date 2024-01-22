@@ -1,0 +1,33 @@
+.example__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $title-font-color;
+}
+
+.example__item {
+  font-family: "Oswald", sans-serif;
+  color: $title-font-color;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example__item-description {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: none;
+}
+
+.example__summary {
+  font-family: "Oswald", sans-serif;
+  color: $title-font-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

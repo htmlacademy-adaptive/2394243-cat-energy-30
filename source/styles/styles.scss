@@ -1,7 +1,35 @@
 /* GLOBAL */
+@import "./global/mixins.scss";
+@import "./global/fonts.scss";
 @import "./global/variables.scss";
 @import "./global/global.scss";
-@import "./global/fonts.scss";
+@import "./global/common.scss";
+@import "./global/visually-hidden.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+/* header */
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/main-nav.scss";
+
+/* index main */
+@import "./blocks/main-container.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/button.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/example.scss";
+
+/* catalog main */
+@import "./blocks/catalog.scss";
+@import "./blocks/additional-products.scss";
+
+/* form main */
+@import "./blocks/main-form.scss";
+
+/* footer */
+@import "./blocks/main-footer.scss";
+@import "./blocks/address.scss";
+@import "./blocks/map.scss";
+@import "./blocks/socials.scss";
