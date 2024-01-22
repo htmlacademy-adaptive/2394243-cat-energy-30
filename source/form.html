@@ -32,10 +32,10 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Каталог продукции</a>
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link" href="#">Подбор программы</a>
@@ -83,10 +83,10 @@
               Контактные данные (владельца кота)
             </legend>
             <label class="main-form__label">
-              <input class="main-form__input" type="email" name="email" placeholder="kuklachev@gmail.com" required> E-mail:*
+              <input class="main-form__input main-form__input--email-icon" type="email" name="email" placeholder="kuklachev@gmail.com" required> E-mail:*
             </label>
             <label class="main-form__label">
-              <input class="main-form__input" type="tel" name="telephone" placeholder="8 (960) 900-60-90" required> Телефон:*
+              <input class="main-form__input main-form__input--telephone-icon" type="tel" name="telephone" placeholder="8 (960) 900-60-90" required> Телефон:*
             </label>
           </fieldset>
           <fieldset class="main-form__comment">
@@ -136,30 +136,35 @@
         </section>
         <section class="map">
           <picture>
-            <source type="image/jpeg"  media="(min-width: 1440px)" srcset="images/map-desktop2x@1x.jpg 1x, images/map-desktop2x@2x.jpg 2x" width="1440" height="400">
-            <source type="image/jpeg"  media="(min-width: 768px)" srcset="images/map-tablet2x@1x.jpg 1x, images/map-tablet2x@2x.jpg 2x" width="768" height="400">
+            <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/map-desktop2x@1x.jpg, images/map-desktop2x@2x.jpg 2x" width="1440" height="400">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet2x@1x.jpg, images/map-tablet2x@2x.jpg 2x" width="768" height="400">
             <img class="map__image" src="../source/images/map-mobile2x@1x.jpg" srcset="images/map-mobile2x@2x.jpg 2x" width="320" height="362" alt="Месторасположине магазина Cat Energy на карте.">
           </picture>
         </section>
         <section class="socials">
-          <a class="logo" href="#">
+          <a class="logo__footer" href="#">
           </a>
           <ul class="socials__list">
             <li class="socials__item">
-              <a class="socials__link" href="#">
+              <a class="socials__link socials__link--vk" href="#">
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link" href="#">
+              <a class="socials__link socials__link--yt" href="#">
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link" href="#">
+              <a class="socials__link socials__link--tg" href="#">
               </a>
             </li>
           </ul>
-          <a class="socials__author-logo" href="#">
-            HTML Academy
+          <div class="socials__container">
+            <a class="socials__author-logo socials__author-logo--text" href="#">
+              HTML Academy
+            </a>
+            <a class="socials__author-logo socials__author-logo--icon" href="#">
+            </a>
+          </div>
         </section>
       </div>
     </footer>
