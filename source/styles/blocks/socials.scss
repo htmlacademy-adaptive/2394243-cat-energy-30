@@ -25,23 +25,8 @@
 }
 }
 
-
 .socials__author-logo {
-  color:#444444;
-
-  &--text {
-    font-size: 16px;
-    line-height: 20px;
-    text-decoration: none;
-  }
-
-  &--icon {
-    display: block;
-    mask-image: url("../../images/html-academy.svg");
-    mask-repeat: no-repeat;
-    background-color: #666666;
-    width: 27px;
-    height: 34px;
-  }
+  color:#666666;
+  text-decoration: none;
 }
 

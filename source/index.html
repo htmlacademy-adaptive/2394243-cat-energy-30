@@ -15,12 +15,12 @@
         <picture>
           <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg" width="70" height="59">
           <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-image-tablet.svg" width="60" height="50">
-          <img class="logo__image" src="../source/images/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          <img class="logo__image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
         </picture>
         <picture>
           <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-desktop-tablet.svg" width="118" height="21">
           <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-desktop-tablet.svg" width="101" height="18">
-          <img class="logo__text" src="../source/images/logo-text-mobile-footer.svg" alt="Текст логотипа Cat Energy." width="101" height="18">
+          <img class="logo__text" src="images/logo-text-mobile-footer.svg" alt="Текст логотипа Cat Energy." width="101" height="18">
         </picture>
       </a>
       <nav class="main-nav">
@@ -62,7 +62,7 @@
         </section>
         <section class="programs">
           <ul class="programs__list">
-            <li class="programs__item"></li>
+            <li class="programs__item programs__item--slim-cat">
               <h3 class="programs__title">
                 Похудение
               </h3>
@@ -72,10 +72,8 @@
               <a class="programs__button" href="#">
                 Каталог Slim
               </a>
-
-          </ul>
-          <ul class="programs__list">
-            <li class="programs__item">
+            </li>
+            <li class="programs__item programs__item--fat-cat">
               <h3 class="programs__title">
                 Набор массы
               </h3>
@@ -166,6 +164,7 @@
         </section>
         <section class="socials">
           <a class="logo__footer" href="#">
+            <img width="128" height="24" class="logo__footer_image" src="images/logo-text-mobile-footer.svg" alt="Логотип сайта Cat Energy">
           </a>
           <ul class="socials__list">
             <li class="socials__item">
@@ -182,10 +181,8 @@
             </li>
           </ul>
           <div class="socials__container">
-            <a class="socials__author-logo socials__author-logo--text" href="#">
-              HTML Academy
-            </a>
-            <a class="socials__author-logo socials__author-logo--icon" href="#">
+            <a class="socials__author-logo" href="#"> HTML Academy
+              <svg class="socials__author-logo-icon" width="27" height="34" viewBox="0 0 27 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m13.64.02-.14-.02-13.5 1.4v24.61l13.5 7.99 13.5-7.99v-24.6l-13.36-1.4Zm11.6 25-11.74 6.94-11.73-6.94v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83v-5.21l3.62-2.15v10.26Zm0-11.57-3.23 1.88-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19-11.62-6.87 11.63-6.96 11.8 6.83Zm0-1.22-11.8-6.92-11.67 6.91v-9.23l11.73-1.23 11.73 1.23v9.24Z" fill="currentColor"/></svg>
             </a>
           </div>
         </section>
