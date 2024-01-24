@@ -1,0 +1,32 @@
+.socials__list {
+  list-style-type: none;
+}
+
+.socials__link {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-color: #666666;
+
+
+  &--vk {
+    mask-image: url("../../images/vk-icon.svg");
+    mask-repeat: no-repeat;
+  }
+
+  &--yt {
+    mask-image: url("../../images/yt-icon.svg");
+    mask-repeat: no-repeat;
+  }
+
+  &--tg {
+    mask-image: url("../../images/tg-icon.svg");
+    mask-repeat: no-repeat;
+}
+}
+
+.socials__author-logo {
+  color:#666666;
+  text-decoration: none;
+}
+

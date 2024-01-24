@@ -29,7 +29,16 @@
   text-transform: uppercase;
 }
 
+.main-form__input--email-icon {
+  background-image: url("../../images/icons/stack.svg#email-icon");
+}
+
+.main-form__input--tel-icon {
+  background-image: url("../../images/icons/stack.svg#telephone-icon");
+}
+
 .main-form__title {
+  font-family: "Oswald", sans-serif;
   text-transform: none;
   color: $title-font-color;
   font-size: 24px;
@@ -52,4 +61,11 @@
   line-height: 16px;
   color: $title-font-color;
   text-transform: none;
+}
+
+.main-form__label {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
 }

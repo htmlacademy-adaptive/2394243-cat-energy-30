@@ -5,3 +5,31 @@
   line-height: 40px;
   color: $title-font-color;
 }
+
+.advantages__list {
+  list-style-type: none;
+}
+
+.advantages__item--healthy {
+  background-image: url("../../images/icons/stack.svg#leaf-icon");
+  width: 80px;
+  height: 80px;
+}
+
+.advantages__item--powder {
+  background-image: url("../../images/icons/stack.svg#powder-icon");
+  width: 80px;
+  height: 80px;
+}
+
+.advantages__item--nutritious {
+  background-image: url("../../images/icons/stack.svg#eat-icon");
+  width: 80px;
+  height: 80px;
+}
+
+.advantages__item--fast {
+  background-image: url("../../images/icons/stack.svg#weight-icon");
+  width: 80px;
+  height: 80px;
+}

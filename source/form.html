@@ -32,10 +32,10 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Каталог продукции</a>
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link" href="#">Подбор программы</a>
@@ -83,10 +83,10 @@
               Контактные данные (владельца кота)
             </legend>
             <label class="main-form__label">
-              <input class="main-form__input" type="email" name="email" placeholder="kuklachev@gmail.com" required> E-mail:*
+              <input class="main-form__input main-form__input--email-icon" type="email" name="email" placeholder="kuklachev@gmail.com" required> E-mail:*
             </label>
             <label class="main-form__label">
-              <input class="main-form__input" type="tel" name="telephone" placeholder="8 (960) 900-60-90" required> Телефон:*
+              <input class="main-form__input main-form__input--telephone-icon" type="tel" name="telephone" placeholder="8 (960) 900-60-90" required> Телефон:*
             </label>
           </fieldset>
           <fieldset class="main-form__comment">
@@ -136,30 +136,33 @@
         </section>
         <section class="map">
           <picture>
-            <source type="image/jpeg"  media="(min-width: 1440px)" srcset="images/map-desktop2x@1x.jpg 1x, images/map-desktop2x@2x.jpg 2x" width="1440" height="400">
-            <source type="image/jpeg"  media="(min-width: 768px)" srcset="images/map-tablet2x@1x.jpg 1x, images/map-tablet2x@2x.jpg 2x" width="768" height="400">
+            <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/map-desktop2x@1x.jpg, images/map-desktop2x@2x.jpg 2x" width="1440" height="400">
+            <source type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet2x@1x.jpg, images/map-tablet2x@2x.jpg 2x" width="768" height="400">
             <img class="map__image" src="../source/images/map-mobile2x@1x.jpg" srcset="images/map-mobile2x@2x.jpg 2x" width="320" height="362" alt="Месторасположине магазина Cat Energy на карте.">
           </picture>
         </section>
         <section class="socials">
-          <a class="logo" href="#">
+          <a class="logo__footer" href="#">
           </a>
           <ul class="socials__list">
             <li class="socials__item">
-              <a class="socials__link" href="#">
+              <a class="socials__link socials__link--vk" href="#">
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link" href="#">
+              <a class="socials__link socials__link--yt" href="#">
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link" href="#">
+              <a class="socials__link socials__link--tg" href="#">
               </a>
             </li>
           </ul>
-          <a class="socials__author-logo" href="#">
-            HTML Academy
+          <div class="socials__container">
+            <a class="socials__author-logo" href="#"> HTML Academy
+              <svg class="socials__author-logo-icon" width="27" height="34" viewBox="0 0 27 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m13.64.02-.14-.02-13.5 1.4v24.61l13.5 7.99 13.5-7.99v-24.6l-13.36-1.4Zm11.6 25-11.74 6.94-11.73-6.94v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83v-5.21l3.62-2.15v10.26Zm0-11.57-3.23 1.88-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19-11.62-6.87 11.63-6.96 11.8 6.83Zm0-1.22-11.8-6.92-11.67 6.91v-9.23l11.73-1.23 11.73 1.23v9.24Z" fill="currentColor"/></svg>
+            </a>
+          </div>
         </section>
       </div>
     </footer>
