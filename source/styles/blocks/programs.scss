@@ -3,7 +3,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
-  color: $title-font-color;
+  color: $font-black;
   text-transform: uppercase;
 }
 
@@ -12,23 +12,44 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: $title-font-color;
+  color: $font-black;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .programs__list {
   list-style-type: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.programs__item {
+  width: 100%;
 }
 
 .programs__item--slim-cat {
   background-image: url("../../images/icons/stack.svg#slim-cat");
-  width: 140px;
-  height: 194px;
+  background-repeat: no-repeat;
+  background-size: 36px 50px;
 }
 
 .programs__item--fat-cat {
   background-image: url("../../images/icons/stack.svg#muscle-cat");
-  width: 268px;
-  height: 112px;
+  background-repeat: no-repeat;
+  background-size: 67px 28px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .programs__item--slim-cat {
+    background-image: url("../../images/icons/stack.svg#slim-cat");
+    background-repeat: no-repeat;
+    background-size: 140px 194px;
+  }
+
+    .programs__item--fat-cat {
+      background-image: url("../../images/icons/stack.svg#muscle-cat");
+      background-repeat: no-repeat;
+      background-size: 268px 112px;
+  }
 }

@@ -1,13 +1,28 @@
+.socials {
+  position: relative;
+  height: 147px;
+}
+
 .socials__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+  width: 132px;
+}
+
+.socials__wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
 .socials__link {
   display: block;
   width: 28px;
   height: 28px;
-  background-color: #666666;
-
+  background-color: $icons-grey;
 
   &--vk {
     mask-image: url("../../images/vk-icon.svg");
@@ -25,8 +40,15 @@
 }
 }
 
+
 .socials__author-logo {
-  color:#666666;
+  color: $icons-grey;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .socials__list {
+    padding-top: 63px;
+  }
 }
 

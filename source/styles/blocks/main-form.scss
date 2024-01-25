@@ -10,7 +10,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  color: #000000;
+  color: $font-black;
 }
 
 .main-form__description {
@@ -18,7 +18,7 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  color: #000000;
+  color: $font-black;
 }
 
 .main-form__input {
@@ -40,7 +40,7 @@
 .main-form__title {
   font-family: "Oswald", sans-serif;
   text-transform: none;
-  color: $title-font-color;
+  color: $font-black;
   font-size: 24px;
   line-height: 26px;
 }
@@ -51,7 +51,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $primary-font-color;
+  color: $font-black;
 }
 
 .main-form__required-clarification {
@@ -59,7 +59,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: $title-font-color;
+  color: $font-black;
   text-transform: none;
 }
 

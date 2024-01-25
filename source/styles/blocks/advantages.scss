@@ -3,33 +3,48 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: $title-font-color;
+  color: $font-black;
 }
 
 .advantages__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item {
+  padding-left: 100px;
+  padding-right: 20px;
 }
 
 .advantages__item--healthy {
   background-image: url("../../images/icons/stack.svg#leaf-icon");
-  width: 80px;
-  height: 80px;
+  background-repeat: no-repeat;
+  background-size: 25px 28px;
 }
 
 .advantages__item--powder {
   background-image: url("../../images/icons/stack.svg#powder-icon");
-  width: 80px;
-  height: 80px;
+  background-repeat: no-repeat;
+  background-size: 26px 28.5px;
 }
 
 .advantages__item--nutritious {
   background-image: url("../../images/icons/stack.svg#eat-icon");
-  width: 80px;
-  height: 80px;
+  background-repeat: no-repeat;
+  background-size: 25px 30px;
 }
 
-.advantages__item--fast {
+.advantages__item--weight {
   background-image: url("../../images/icons/stack.svg#weight-icon");
-  width: 80px;
-  height: 80px;
+  background-repeat: no-repeat;
+  background-size: 26px 31px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    gap: 153px;
+  }
 }

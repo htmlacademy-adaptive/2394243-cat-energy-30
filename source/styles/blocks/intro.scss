@@ -4,8 +4,8 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
-  color: $additional-font-color;
-  background-color: #2d6907;
+  color: $font-white;
+  background-color: $basic-green;
 }
 
 .intro__description {
@@ -14,6 +14,28 @@
   font-size: 14px;
   line-height: 14px;
   text-align: center;
-  color: $additional-font-color;
-  background-color: #2d6907;
+  color: $font-white;
+  background-color: $basic-green;
+  text-transform: uppercase;
+}
+
+
+@media (min-width: $tablet-width) {
+  .intro__title {
+    color: $font-black;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    padding-left: 120px;
+    width: 416px;
+  }
+
+  .intro__description {
+    color: $font-black;
+    font-size: 20px;
+    line-height: 20px;
+    width: 283px;
+    padding-left: 120px;
+    text-align: left;
+  }
 }
