@@ -44,12 +44,6 @@
   grid-template-rows: 76px 48px 40px;
 }
 
-.catalog__product-cards-item--show-more {
-  background-image: url("../../images/icons/stack.svg#plus");
-  width: 30px;
-  height: 30px;
-}
-
 .catalog__product-cards-description-list {
   grid-column: 2/3;
   grid-row: 2/3;
@@ -66,7 +60,7 @@
 }
 
 .catalog__show-more {
-  background-image: url(../../images/icons/plus.svg);
+  background-image: url("../../images/icons/stack.svg#plus");
   background-repeat: no-repeat;
   background-size: 30px 30px;
   background-position: 50% 0;

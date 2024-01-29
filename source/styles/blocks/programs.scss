@@ -17,13 +17,24 @@
   padding-left: 20px;
   padding-right: 33px;
   padding-bottom: 23px;
-  border-bottom: 1px solid $index-border-color;
+  min-height: 90px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 57px;
+    left: 20px;
+    border-bottom: 1px solid $index-border-color;
+    width: 86%;
+  }
 }
 
 .programs__button {
+  position: relative;
   display: block;
   padding-left: 20px;
   padding-top: 19px;
+  padding-bottom: 20px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -31,6 +42,18 @@
   color: $font-black;
   text-transform: uppercase;
   text-decoration: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 22px;
+    left: 120px;
+    background-image: url("../../images/icons/stack.svg#programs-arrow-right");
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 12px;
+  }
+
 }
 
 .programs__list {
@@ -108,30 +131,81 @@
     padding-right: 30px;
   }
 
+  .programs__item {
+    margin-bottom: 33px;
+  }
+
   .programs__item--slim-cat {
 
     &::before {
+      left: auto;
+      top: 81px;
+      right: 93px;
       width: 140px;
       height: 194px;
     }
 
     &::after {
+      left: auto;
+      top: 92px;
+      right: 63px;
       width: 200px;
       height: 200px;
     }
   }
 
-    .programs__item--fat-cat {
+  .programs__item--fat-cat {
 
-      &::before {
-        width: 268px;
-        height: 112px;
-      }
+    &::before {
+      left: auto;
+      top: 134px;
+      right: 9px;
+      width: 300px;
+      height: 112px;
+    }
 
-      &::after {
-        width: 200px;
-        height: 200px;
-      }
+    &::after {
+      left: auto;
+      top: 90px;
+      right: 63px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .programs__title {
+    padding: 0;
+    margin: 0;
+    padding-top: 77px;
+    padding-left: 53px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .programs__description {
+    padding: 0;
+    margin: 0;
+    padding-top: 24px;
+    padding-left: 52px;
+    padding-right: 316px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      display: none;
+    }
+  }
+  .programs__button {
+    font-size: 20px;
+    line-height: 29.5px;
+    padding-left: 53px;
+    padding-bottom: 53px;
+    margin-top: 35px;
+
+    &::before {
+      bottom: 63px;
+      left: 183px;
+    }
   }
 }
 

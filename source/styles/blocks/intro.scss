@@ -61,6 +61,8 @@
 }
 
 .intro__button {
+  font-size: 16px;
+  line-height: 20px;
   margin-top: 3px;
   margin-left: 20px;
   margin-right: 20px;
@@ -82,6 +84,7 @@
 
   .intro__title {
     padding: 0;
+    margin-bottom: 40px;
     color: $font-black;
     font-size: 60px;
     line-height: 60px;
@@ -96,6 +99,21 @@
     line-height: 20px;
     width: 283px;
     padding-left: 120px;
+    padding-top: 0;
+    padding-bottom: 21px;
     text-align: left;
+  }
+
+  .intro__button {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
+    padding: 14px 26px;
+
+    &--short {
+      position: absolute;
+      top: 230px;
+      left: 120px;
+    }
   }
 }

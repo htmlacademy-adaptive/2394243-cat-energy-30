@@ -1,8 +1,8 @@
-const slider = document.querySelector('.demo__slider');
-const sliderWrapper = document.querySelector('.demo');
-const sliderButton = document.querySelector('.demo__button');
-const sliderBefore = document.querySelector('.demo__image--before');
-const sliderAfter = document.querySelector('.demo__image--after');
+const slider = document.querySelector('.example__demo-slider');
+const sliderWrapper = document.querySelector('.example__demo');
+const sliderButton = document.querySelector('.example__demo-button');
+const sliderBefore = document.querySelector('.example__demo-image--before');
+const sliderAfter = document.querySelector('.example__demo-image--after');
 
 let start = false;
 let position;

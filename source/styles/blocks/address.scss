@@ -25,10 +25,10 @@
 
 @media (min-width: $tablet-width) {
   .address__wrapper {
+    margin: 0;
     display: flex;
     justify-content: space-between;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 60px 70px;
   }
 
   .address__title {
@@ -45,7 +45,7 @@
 
   .address__city-wrap {
     display: block;
-    padding-top: 16px;
+    padding-top: 20px;
   }
 
 }
