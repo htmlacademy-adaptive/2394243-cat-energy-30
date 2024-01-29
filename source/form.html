@@ -12,32 +12,35 @@
 
   <body class="page__body">
     <header class="main-header">
-      <a class="logo" href="#">
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg" width="70" height="59">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-image-tablet.svg" width="60" height="50">
-          <img class="logo__image" src="../source/images/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-        </picture>
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-desktop-tablet.svg" width="118" height="21">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-desktop-tablet.svg" width="101" height="18">
-          <img class="logo__text" src="../source/images/logo-text-mobile-footer.svg" alt="Текст логотипа Cat Energy." width="101" height="18">
-        </picture>
+      <a class="logo" href="index.html">
+        <div class="logo__image-wrapper">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg" width="70" height="59">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-image-tablet.svg" width="60" height="50">
+            <img class="logo__image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          </picture>
+        </div>
+        <div class="logo__text-wrapper">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-desktop-tablet.svg" width="118" height="21">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-desktop-tablet.svg" width="101" height="18">
+            <img class="logo__text" src="images/logo-text-mobile-footer.svg" alt="Текст логотипа Cat Energy." width="101" height="18">
+          </picture>
+        </div>
       </a>
-
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--index">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--catalog">
               <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="main-nav__item main-nav__item--current">
+            <li class="main-nav__item main-nav__item--current main-nav__item--form">
               <a class="main-nav__link" href="#">Подбор программы</a>
             </li>
           </ul>
@@ -50,44 +53,61 @@
           Подбор программы
         </h1>
         <form class="main-form__form" action="https://echo.htmlacademy.ru">
-          <fieldset class="main-form__cat-data">
-            <legend class="main-form__description">
-                Заполните анкету, и мы подберем программу питания для вашего кота
-            </legend>
-              <label class="main-form__label">
-                <input class="main-form__input" placeholder="Барсик" type="text" name="cat-name" required> Имя:*
+          <div class="main-form__cat-data-container">
+            <fieldset class="main-form__cat-data">
+              <legend class="main-form__description">
+                  Заполните анкету, и мы подберем программу питания для вашего кота
+              </legend>
+                <ul class="main-form__cat-data-list">
+                  <li class="main-form__cat-data-item">
+                    <label for="id-name" class="main-form__label">Имя:*</label>
+                      <input class="main-form__input" id="id-name" placeholder="Барсик" type="text" name="cat-name" required>
+                  </li>
+                  <li class="main-form__cat-data-item">
+                    <label for="id-weight" class="main-form__label">Вес (кг):*</label>
+                      <input class="main-form__input" id="id-weight" type="number" name="cat-weight" placeholder="7" required>
+                  </li>
+                  <li class="main-form__cat-data-item">
+                    <label for="id-old" class="main-form__label">Возраст (лет):</label>
+                      <input class="main-form__input" id="id-old" type="number" name="cat-age" placeholder="7">
+                  </li>
+                </ul>
+            </fieldset>
+            <fieldset class="main-form__program-selection">
+              <legend class="visually-hidden">
+                Выбор программы для кота
+              </legend>
+                <ul class="main-form__programs-data-list">
+                  <li class="main-form__programs-data-item">
+                    <input id="id-weight-loss" class="main-form__radiobutton" type="radio" name="weight-program" value="weight-loss" checked>
+                    <label for="id-weight-loss" class="main-form__option">Похудение</label>
+                  </li>
+                  <li class="main-form__programs-data-item">
+                    <input id="id-weight-gain" class="main-form__radiobutton" type="radio" name="weight-program" value="weight-gain">
+                    <label for="id-weight-gain" class="main-form__option">Набор массы</label>
+                  </li>
+                  <li class="main-form__programs-data-item">
+                    <input  id="id-need-help" class="main-form__radiobutton" type="radio" name="weight-program" value="need-assistance">
+                    <label for="id-need-help" class="main-form__option">Не знаю (нужен ваш совет)</label>
+                  </li>
+                </ul>
               </label>
-              <label class="main-form_label">
-                <input class="main-form__input" type="number" name="cat-weight" placeholder="7" required> Вес (кг):*
-              </label>
-              <label class="main-form__label">
-                <input class="main-form__input" type="number" name="cat-age" placeholder="7"> Возраст (лет):
-              </label>
-          </fieldset>
-          <fieldset class="main-form__program-selection">
-            <legend class="visually-hidden">
-              Выбор программы для кота
-            </legend>
-            <label class="main-form__option">
-              <input class="main-form__radiobutton" type="radio" name="weight-program" value="weight-loss" checked> Похудение
-            </label>
-            <label class="main-form__option">
-              <input class="main-form__radiobutton" type="radio" name="weight-program" value="weight-gain"> Набор массы
-            </label>
-            <label class="main-form__option">
-              <input class="main-form__radiobutton" type="radio" name="weight-program" value="need-assistance"> Не знаю (нужен ваш совет)
-            </label>
-          </fieldset>
+            </fieldset>
+          </div>
           <fieldset class="main-form__owner-data">
             <legend class="main-form__title">
               Контактные данные (владельца кота)
             </legend>
-            <label class="main-form__label">
-              <input class="main-form__input main-form__input--email-icon" type="email" name="email" placeholder="kuklachev@gmail.com" required> E-mail:*
-            </label>
-            <label class="main-form__label">
-              <input class="main-form__input main-form__input--telephone-icon" type="tel" name="telephone" placeholder="8 (960) 900-60-90" required> Телефон:*
-            </label>
+            <ul class="main-form__owner-data-list">
+              <li class="main-form__owner-data-item">
+                <label for="id-email" class="main-form__label">E-mail:*</label>
+                <input id="id-email" class="main-form__input main-form__input--email-icon" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              </li>
+              <li class="main-form__owner-data-item">
+                <label for="id-tel" class="main-form__label">Телефон:*</label>
+                <input id="id-tel" class="main-form__input main-form__input--telephone-icon" type="tel" name="telephone" placeholder="8 (960) 900-60-90" required>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="main-form__comment">
             <legend class="main-form__title">
@@ -98,21 +118,27 @@
             </label>
           </fieldset>
           <fieldset class="main-form__additional">
-            <legend class="visually-hidden">
-              Дополнительные опции
+            <legend class="main-form__title">
+              Дополнительно
             </legend>
-            <label class="main-form__label">
-              <input class="main-form__checkbox" type="checkbox" name="sweetener" checked> Сахарозаменитель
-            </label>
-            <label class="main-form__label">
-              <input class="main-form__checkbox" type="checkbox" name="water"> Питьевая вода
-            </label>
-            <label class="main-form__label">
-              <input class="main-form__checkbox" type="checkbox" name="milk"> Молоко
-            </label>
-            <label class="main-form__label">
-              <input class="main-form__checkbox" type="checkbox" name="vitamins"> Витамины
-            </label>
+              <ul class="main-form__additional-options-list">
+                <li class="main-form__additional-options-item">
+                  <input id="id-sweetener" class="main-form__checkbox" type="checkbox" name="sweetener" checked>
+                  <label for="id-sweetener" class="main-form__label">Сахарозаменитель</label>
+                </li>
+                <li class="main-form__additional-options-item">
+                  <input id="id-water" class="main-form__checkbox" type="checkbox" name="water">
+                  <label for="id-water" class="main-form__label">Питьевая вода</label>
+                </li>
+                <li class="main-form__additional-options-item">
+                  <input id="id-milk" class="main-form__checkbox" type="checkbox" name="milk">
+                  <label for="id-milk" class="main-form__label">Молоко</label>
+                </li>
+                <li class="main-form__additional-options-item">
+                  <input id="id-vitamins" class="main-form__checkbox" type="checkbox" name="vitamins">
+                  <label for="id-vitamins" class="main-form__label">Витамины</label>
+                </li>
+              </ul>
           </fieldset>
           <input class="button" type="submit" value="Отправить заявку">
           <p class="main-form__required-clarification">
@@ -127,37 +153,40 @@
           <h2 class="visually-hidden">
             Адрес и местоположение на карте
           </h2>
-          <p class="address__title">
-            Приглашаем к сотрудничеству дилеров!
-          </p>
-          <p class="address__description">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </p>
-        </section>
-        <section class="map">
+          <div class="address__wrapper">
+            <p class="address__title">
+              Приглашаем к сотрудничеству дилеров!
+            </p>
+            <p class="address__description">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </p>
+          </div>
           <picture>
             <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/map-desktop2x@1x.jpg, images/map-desktop2x@2x.jpg 2x" width="1440" height="400">
             <source type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet2x@1x.jpg, images/map-tablet2x@2x.jpg 2x" width="768" height="400">
-            <img class="map__image" src="../source/images/map-mobile2x@1x.jpg" srcset="images/map-mobile2x@2x.jpg 2x" width="320" height="362" alt="Месторасположине магазина Cat Energy на карте.">
+            <img class="address__map-image" src="../source/images/map-mobile2x@1x.jpg" srcset="images/map-mobile2x@2x.jpg 2x" width="320" height="362" alt="Месторасположине магазина Cat Energy на карте.">
           </picture>
         </section>
         <section class="socials">
-          <a class="logo__footer" href="#">
+          <a class="socials__logo-footer" href="#">
+            <img width="128" height="24" class="socials__logo-footer-image" src="images/logo-text-mobile-footer.svg" alt="Логотип сайта Cat Energy">
           </a>
-          <ul class="socials__list">
-            <li class="socials__item">
-              <a class="socials__link socials__link--vk" href="#">
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link socials__link--yt" href="#">
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link socials__link--tg" href="#">
-              </a>
-            </li>
-          </ul>
+          <div class="socials__wrapper">
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link socials__link--vk" href="#">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--yt" href="#">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--tg" href="#">
+                </a>
+              </li>
+            </ul>
+          </div>
           <div class="socials__container">
             <a class="socials__author-logo" href="#"> HTML Academy
               <svg class="socials__author-logo-icon" width="27" height="34" viewBox="0 0 27 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m13.64.02-.14-.02-13.5 1.4v24.61l13.5 7.99 13.5-7.99v-24.6l-13.36-1.4Zm11.6 25-11.74 6.94-11.73-6.94v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83v-5.21l3.62-2.15v10.26Zm0-11.57-3.23 1.88-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19-11.62-6.87 11.63-6.96 11.8 6.83Zm0-1.22-11.8-6.92-11.67 6.91v-9.23l11.73-1.23 11.73 1.23v9.24Z" fill="currentColor"/></svg>

@@ -1,4 +1,8 @@
 .programs__title {
+  margin: 0;
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-left: 90px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -7,7 +11,19 @@
   text-transform: uppercase;
 }
 
+.programs__description {
+  margin: 0;
+  padding-top: 29px;
+  padding-left: 20px;
+  padding-right: 33px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $index-border-color;
+}
+
 .programs__button {
+  display: block;
+  padding-left: 20px;
+  padding-top: 19px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -21,35 +37,114 @@
   list-style-type: none;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 20px;
 }
 
 .programs__item {
+  position: relative;
   width: 100%;
+  background-color: $background-primary;
+  z-index: -2;
+  min-height: 266px;
 }
 
 .programs__item--slim-cat {
+
+  &::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 27px;
   background-image: url("../../images/icons/stack.svg#slim-cat");
   background-repeat: no-repeat;
-  background-size: 36px 50px;
+  width: 36px;
+  height: 50px;
 }
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $basic-green;
+    z-index: -1;
+  }
+}
+
+
 .programs__item--fat-cat {
-  background-image: url("../../images/icons/stack.svg#muscle-cat");
-  background-repeat: no-repeat;
-  background-size: 67px 28px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 13px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../../images/icons/stack.svg#muscle-cat");
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $basic-green;
+    z-index: -1;
+  }
 }
 
 
 @media (min-width: $tablet-width) {
+  .programs__list {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .programs__item--slim-cat {
-    background-image: url("../../images/icons/stack.svg#slim-cat");
-    background-repeat: no-repeat;
-    background-size: 140px 194px;
+
+    &::before {
+      width: 140px;
+      height: 194px;
+    }
+
+    &::after {
+      width: 200px;
+      height: 200px;
+    }
   }
 
     .programs__item--fat-cat {
-      background-image: url("../../images/icons/stack.svg#muscle-cat");
-      background-repeat: no-repeat;
-      background-size: 268px 112px;
+
+      &::before {
+        width: 268px;
+        height: 112px;
+      }
+
+      &::after {
+        width: 200px;
+        height: 200px;
+      }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .programs__item {
+    width: 570px;
   }
 }

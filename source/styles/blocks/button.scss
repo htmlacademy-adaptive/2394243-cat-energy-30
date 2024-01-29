@@ -1,4 +1,5 @@
 .button {
+  display: block;
   font-family: "Oswald", sans-serif;
   background-color: $basic-green;
   color: $font-white;
@@ -8,4 +9,8 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.button--secondary {
+  margin: 0 auto;
 }

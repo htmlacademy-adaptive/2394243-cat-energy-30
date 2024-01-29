@@ -5,7 +5,21 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: $font-primary;
-  background-color: $basic-green;
   padding: 0;
   margin: 0;
+}
+
+img {
+  object-fit: contain;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
 }

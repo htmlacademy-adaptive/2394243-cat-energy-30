@@ -33,7 +33,7 @@
   background-image: url("../../images/icons/stack.svg#email-icon");
 }
 
-.main-form__input--tel-icon {
+.main-form__input--telephone-icon {
   background-image: url("../../images/icons/stack.svg#telephone-icon");
 }
 
@@ -52,6 +52,8 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $font-black;
+  min-width: 98%;
+  min-height: 150px;
 }
 
 .main-form__required-clarification {
@@ -68,4 +70,43 @@
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.main-form__input {
+  width: 100%;
+}
+
+.main-form__cat-data-item {
+  display: flex;
+  gap: 13px;
+}
+
+.main-form__owner-data-item {
+  display: flex;
+  gap: 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-form__additional-options-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .main-form__cat-data-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main-form__owner-data-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main-form__additional-options-list {
+    display: flex;
+    justify-content: space-between;
+  }
 }
