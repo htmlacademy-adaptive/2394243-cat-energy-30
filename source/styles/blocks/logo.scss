@@ -2,9 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 9px;
-  padding-bottom: 15px;
-  padding-left: 20px;
+  padding: 9px 55px 10px 20px;
 }
 
 .logo__text-wrapper {
@@ -23,6 +21,7 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .logo__text-wrapper {
     padding: 14px;
   }

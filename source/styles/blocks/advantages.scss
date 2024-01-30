@@ -230,8 +230,26 @@
 }
 
 @media (min-width: $desktop-width) {
+
+  .advantages__title {
+    margin: 0;
+    padding-top: 71px;
+    padding-left: 80px;
+  }
+
   .advantages__list {
-    display: flex;
-    justify-content: space-between;
+    margin: 0;
+    padding-left: 80px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0;
+    column-gap: 0;
+  }
+
+  .advantages__item--nutritious {
+    background-position: 58% 80%;
+  }
+
+  .advantages__item--weight {
+    background-position: 61% 77%;
   }
 }

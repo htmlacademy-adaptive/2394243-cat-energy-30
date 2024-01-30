@@ -22,6 +22,12 @@
   margin-bottom: 26px;
 }
 
+.address__map-image {
+  object-fit:cover;
+  width: 100%;
+  display: block;
+}
+
 
 @media (min-width: $tablet-width) {
   .address__wrapper {
@@ -49,3 +55,28 @@
   }
 
 }
+
+@media (min-width: $desktop-width) {
+  .address {
+    position: relative;
+  }
+
+  .address__wrapper {
+    padding: 60px 80px;
+    position: absolute;
+    width: 407px;
+    left: 7.6%;
+    top: 24%;
+    z-index: 50;
+    background-color: $font-white;
+  }
+
+  .address__description {
+    text-align: left;
+  }
+
+  .address__city-wrap {
+    padding-top: 18px;
+  }
+}
+

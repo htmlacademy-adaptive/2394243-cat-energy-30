@@ -7,8 +7,8 @@
 .main-nav--closed .main-nav__toggle::before {
   content:"";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -2px;
+  right: 0;
   width: 24px;
   height: 24px;
   background-image: url("../../images/icons/menu-icon.svg");
@@ -19,10 +19,10 @@
 .main-nav--opened .main-nav__toggle::before {
   content:"";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 18px;
-  height: 18px;
+  top: -3px;
+  left: -6px;
+  width: 20px;
+  height: 20px;
   background-image: url("../../images/icons/close-icon.svg");
   background-repeat: no-repeat;
   background-color: $font-white;
@@ -41,7 +41,7 @@
   border-bottom: 1px solid $menu-border;
   text-align: center;
   padding-top: 22px;
-  padding-bottom: 24px;
+  padding-bottom: 19px;
 }
 
 .main-nav__link {
@@ -107,8 +107,36 @@
   }
 
   .main-nav__link {
+    position: relative;
     font-size: 18px;
     line-height: 24px;
+
+    &--current::after {
+      content: "";
+      display: block;
+      position: absolute;
+      border-bottom: 2px solid $basic-green;
+      width: 100%;
+      height: 2px;
+      top: 30px;
+      left: 0;
+    }
   }
 
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    width: 475px;
+  }
+
+  .main-nav__link {
+    font-size: 20px;
+    line-height: 29.5px;
+    color: $font-white;
+
+    &--current::after {
+      border-bottom: 2px solid $font-white;
+    }
+  }
 }
