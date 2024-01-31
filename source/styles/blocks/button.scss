@@ -13,6 +13,11 @@
   margin: 0 auto;
 }
 
+.button--no-active {
+  background-color: $socials-background-color;
+  color: $font-primary;
+}
+
 @media (min-width: $tablet-width) {
   .button {
     display: inline;
