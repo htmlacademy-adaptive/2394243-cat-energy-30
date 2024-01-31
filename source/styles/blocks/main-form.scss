@@ -10,7 +10,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  color: #000000;
+  color: $font-black;
 }
 
 .main-form__description {
@@ -18,7 +18,7 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  color: #000000;
+  color: $font-black;
 }
 
 .main-form__input {
@@ -33,14 +33,14 @@
   background-image: url("../../images/icons/stack.svg#email-icon");
 }
 
-.main-form__input--tel-icon {
+.main-form__input--telephone-icon {
   background-image: url("../../images/icons/stack.svg#telephone-icon");
 }
 
 .main-form__title {
   font-family: "Oswald", sans-serif;
   text-transform: none;
-  color: $title-font-color;
+  color: $font-black;
   font-size: 24px;
   line-height: 26px;
 }
@@ -51,7 +51,9 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $primary-font-color;
+  color: $font-black;
+  min-width: 98%;
+  min-height: 150px;
 }
 
 .main-form__required-clarification {
@@ -59,7 +61,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: $title-font-color;
+  color: $font-black;
   text-transform: none;
 }
 
@@ -68,4 +70,43 @@
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.main-form__input {
+  width: 100%;
+}
+
+.main-form__cat-data-item {
+  display: flex;
+  gap: 13px;
+}
+
+.main-form__owner-data-item {
+  display: flex;
+  gap: 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-form__additional-options-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .main-form__cat-data-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main-form__owner-data-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main-form__additional-options-list {
+    display: flex;
+    justify-content: space-between;
+  }
 }

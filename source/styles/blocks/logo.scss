@@ -1,1 +1,28 @@
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 55px 10px 20px;
+}
 
+.logo__text-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    padding: 0;
+  }
+
+  .logo__text-wrapper {
+    padding-left: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .logo__text-wrapper {
+    padding: 14px;
+  }
+}
